@@ -22,3 +22,7 @@ docker container stop redisexample
 # Remove container
 # required container_name/container_id
 docker container rm redisexample
+
+
+# Stop all container with status running
+docker kill $(docker ps -q)
